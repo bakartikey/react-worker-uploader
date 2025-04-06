@@ -1,0 +1,20 @@
+{
+  "name": "react-worker-upload",
+  "version": "1.0.0",
+  "main": "dist/react-worker-upload.cjs.js",
+  "module": "dist/react-worker-upload.es.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "author": "Kartikey Tiwari",
+  "license": "MIT"
+}
