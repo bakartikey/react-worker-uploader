@@ -1,5 +1,19 @@
+# Don't publish source code or dev folders
 src/
-vite.config.ts
-tsconfig.json
+examples/
+tests/
+playground/
+
+# Local environment stuff
 node_modules/
-*.test.*
+dist/  # (only if you're not pre-building before publishing)
+.env
+.DS_Store
+
+# Build & config
+.vscode/
+.git/
+.gitignore
+tsconfig.json
+tsconfig.build.json
+*.log

@@ -1,20 +1,39 @@
 {
-  "name": "react-worker-upload",
+  "name": "react-worker-uploader",
   "version": "1.0.0",
-  "main": "dist/react-worker-upload.cjs.js",
-  "module": "dist/react-worker-upload.es.js",
+  "description": "A customizable React hook for uploading and parsing files using Web Workers",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
+    "lint": "eslint .",
     "prepublishOnly": "npm run build"
   },
-  "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bakartikey/react-worker-uploader.git"
   },
+  "keywords": [
+    "react",
+    "webworker",
+    "file upload",
+    "csv",
+    "json",
+    "hook",
+    "parser"
+  ],
   "author": "Kartikey Tiwari",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "tsup": "^7.0.0"
+  }
 }
